@@ -1,0 +1,347 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Kumbh Sans", sans-serif;
+}
+
+.card {
+  /* This section calls the slideInFromLeft animation we defined above */
+  animation: fadein 2s;
+  width: 92vw; //62vw;//100%;
+  min-height: 25vh;
+  display: flex;
+  margin-top: 2rem !important;
+  margin: auto;
+  justify-content: center;
+  max-width: 1400px;
+  margin-bottom: 2rem !important;
+
+  @media screen and (max-width: 1024px) {
+    width: 96vw;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 100%;
+    flex-flow: column;
+  }
+
+  &__left {
+    width: 40%;
+    min-width: 25%;
+    //max-width: 40%;
+    background-color: rgb(252, 242, 233);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      margin: auto;
+      margin-bottom: 1rem;
+    }
+
+    h5 {
+      margin: 0.5rem 0;
+    }
+
+    hr {
+      margin: 0.5rem 2rem 0.5rem 2rem;
+      border: 1px solid grey;
+      width: 80%;
+    }
+
+    &__img {
+      width: 7rem;
+      height: 7rem;
+      object-fit: cover;
+      object-position: 50% 50%;
+      border-radius: 50%;
+      margin: 1rem 0;
+    }
+
+    &__details {
+      margin-bottom: 1rem;
+      ul {
+        padding: 0.3rem;
+
+        li {
+          font-size: 1rem !important;
+          padding: 0.2rem;
+
+          @media only screen and (max-width: 1250px) {
+            font-size: 0.8rem !important;
+          }
+
+          @media only screen and (max-width: 425px) {
+            font-size: 0.7rem !important;
+          }
+        }
+
+        ul {
+          margin-left: 1rem;
+
+          li {
+            font-size: 1rem !important;
+            padding: 0.2rem;
+
+            @media only screen and (max-width: 1250px) {
+              font-size: 0.8rem !important;
+            }
+
+            @media only screen and (max-width: 1024px) {
+              font-size: 0.8rem !important;
+            }
+            @media only screen and (max-width: 425px) {
+              font-size: 0.7rem !important;
+            }
+          }
+        }
+      }
+    }
+
+    h3 {
+      margin: 0.3rem 0;
+    }
+
+    @media screen and (max-width: 769px) {
+      width: 90%;
+    }
+  }
+
+  &__right {
+    width: 65%;
+    min-width: 38%;
+    // max-width: 65%;
+    background-color: #fff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+    @media screen and (max-width: 2560px) {
+      width: 43%;
+    }
+
+    @media screen and (max-width: 1440px) {
+      width: 55%;
+    }
+
+    @media screen and (max-width: 1024px) {
+      width: 80%; //55%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 90vw;
+      margin: auto;
+    }
+
+    &__cards {
+      margin-top: 1.3rem;
+      @media screen and (max-width: 768px) {
+        margin-top: 0.5rem;
+      }
+
+      &__fullwidthrow {
+        display: flex;
+        margin: 0.8rem 0.3rem 0.5rem 0.3rem;
+
+        @media screen and (max-width: 800px) {
+          flex-flow: column;
+        }
+
+        div {
+          display: flex;
+          flex-flow: row;
+          background-color: #fcf2e9;
+          margin: 0.5rem;
+
+          img {
+            width: 100px;
+            height: 100px;
+            margin: 0.6rem;
+            border-radius: 0.5rem;
+          }
+
+          span {
+            ul {
+              padding: 1rem 0.3rem 0 1rem !important;
+
+              li {
+                font-size: 0.8rem;
+                padding-bottom: 0.3rem;
+              }
+            }
+          }
+        }
+      }
+
+      &__fullwidthrow2 {
+        display: flex;
+        margin: 1rem 0.5rem 0.5rem 0.5rem;
+
+        @media screen and (max-width: 1024px) {
+          margin: 1.5rem 0.5rem 0.5rem 0.5rem;
+        }
+
+        @media screen and (max-width: 1440px) {
+          margin: 2.5rem 0.5rem 0.5rem 0.5rem;
+        }
+
+        @media screen and (max-width: 769px) {
+          flex-flow: column;
+        }
+
+        div {
+          display: flex;
+          flex-flow: row;
+          margin-bottom: 0.5rem;
+
+          img {
+            width: 150px;
+            height: 100px;
+            margin: 0.6rem;
+            border-radius: 0.5rem;
+            margin: auto;
+          }
+
+          span {
+            ul {
+              padding: 1rem 1rem 0 1rem !important;
+              li {
+                font-size: 0.8rem;
+                padding-bottom: 0.5rem;
+              }
+            }
+          }
+        }
+      }
+
+      hr {
+        margin: 1rem 1rem 1rem 1rem;
+        border: 1px solid #d4b9a0;
+      }
+
+      &__row2 {
+        display: flex;
+        margin: 0.6rem 0.3rem 0.5rem 0.3rem;
+
+        @media screen and (max-width: 769px) {
+          flex-flow: column;
+        }
+
+        div {
+          display: flex;
+          flex-flow: column;
+          background-color: #fcf2e9;
+          margin: 0.5rem 0.5rem;
+          width: 30%;
+
+          @media screen and (max-width: 769px) {
+            width: 95%; //100%;
+            flex-flow: row;
+          }
+
+          img {
+            height: 100px;
+            margin: 0.6rem;
+            border-radius: 0.5rem;
+            width: auto;
+            @media screen and (max-width: 769px) {
+              width: 6rem;
+            }
+
+            @media screen and (max-width: 1024px) {
+              width: 9rem; //7rem;
+              align-self: center;
+            }
+          }
+
+          span {
+            ul {
+              padding: 1rem 0.3rem 0 1.5rem !important;
+              @media screen and (max-width: 769px) {
+                width: 95%;
+                flex-flow: row;
+              }
+
+              li {
+                font-size: 0.8rem;
+                padding-bottom: 0.3rem;
+              }
+            }
+          }
+        }
+      }
+
+      &__row {
+        display: flex;
+        margin: 0 0.3rem 0 0.3rem;
+
+        @media screen and (max-width: 769px) {
+          flex-flow: column;
+        }
+
+        div {
+          display: flex;
+          flex-flow: row;
+          background-color: #fcf2e9;
+          //margin: 0.5rem;
+          margin-bottom: 0.5rem;
+          width: 47%; //46%;
+          align-self: center;
+          margin: 0rem 0.5rem 0.5rem 0.5rem;
+
+          @media screen and (max-width: 769px) {
+            width: 86vw; //97%;
+          }
+
+          picture{
+            width: 6rem;
+            height: 6rem;
+            margin: 0.6rem;
+            border-radius: 0.5rem;
+
+            @media screen and (max-width: 1024px) {
+              width: 5rem;
+              height: 5rem;
+            }
+          }
+
+          img {
+            width: 6rem;
+            height: 6rem;
+            margin: 0.6rem;
+            border-radius: 0.5rem;
+
+            @media screen and (max-width: 1024px) {
+              width: 5rem;
+              height: 5rem;
+            }
+          }
+          span {
+            ul {
+              padding: 1rem 0.3rem 0 1rem !important;
+              li {
+                font-size: 0.8rem;
+                padding-bottom: 0.3rem;
+
+                @media screen and (max-width: 1100px) {
+                  font-size: 0.7rem;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+
+    h4 {
+      color: rgb(0, 80, 255);
+      margin: 1rem;
+    }
+    p {
+      margin: 1rem;
+      font-size: 0.8rem;
+      text-align: justify;
+    }
+  }
+}
